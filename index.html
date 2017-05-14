@@ -3,8 +3,9 @@
 <html>  
 <head> 
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<title>Javascript Calculator</title>  
+<title>Basic Calculator</title>  
 
 <!-- CSS Code -->  
 <style>  
@@ -15,11 +16,6 @@ body {
   
 }  
 
-#form {
-	padding:0px 0px;
-	margin-left:520px;
-}
-
 h1{  
 	text-align: center;  
 	font-size: 40px;  
@@ -27,7 +23,7 @@ h1{
 }  
  
 input {
-	margin: 5px 5px;
+	margin: 3px 3px;
 	width: 50px;
 	height: 50px;
 	background-color: #b2b2b2;
@@ -40,18 +36,22 @@ input:hover {
 
 input:active { 
 	text-decoration: none; 
+	 box-shadow: 0 1px #666;
+  transform: translateY(1px);
 }
 
+
 .blank {
-	width: 305px;
+	width: 295px;
 	height:50px;
 }
 
-form {
+.design {
+	width: 350px;
 	background-color: black;
-	padding: 5px 5px 5px 5px;
-	margin: 0px;
-
+	padding: 60px 0px 30px 0px;
+	margin-left: 492px;
+	margin-top: 50px;
 }
 
  
@@ -64,12 +64,15 @@ form {
 
 <div class="row text-center">
 	<div class="col-lg-12">
-				<h1>Javascript Calculator</h1> 
+				<h1 style="margin-top: 30px">Basic Calculator</h1>
 </div></div>
 			<div class="row">
+			<div class="container-fluid">
 				<div class="col-lg-12 col-sm-6">
-				<form name="calci" id="form">  
-						<input type="text" style="padding-right: 8px; background-color: #e5e5e5; font-size: 18px;" class="blank text-right" name="data"></br>
+				
+				<div class="design w3-container w3-round-large w3-card-4">
+				<form name="calci" class="text-center">  
+						<input type="text" style="padding-right: 8px; margin-bottom: 25px; background-color: #e5e5e5; font-size: 18px;" class="blank text-right" name="data"></br>
 						<input type="button" class="btn btn-lg" name="btn1" value="1" onclick="displayNum(btn1.value)">
 						<input type="button" class="btn btn-lg" name="btn2" value="2" onclick="displayNum(btn2.value)">
 						<input type="button" class="btn btn-lg" name="btn3" value="3" onclick="displayNum(btn3.value)">
@@ -90,8 +93,18 @@ form {
 						<input type="button" class="btn btn-lg" name="btndot" value="." onclick="displayNum(btndot.value)">
 						<input type="button" class="btn btn-lg" name="btnsqroot" value="&Sqrt;" onclick="displayNum(btnsqroot.value)">
 						<input type="button" class="btn btn-lg" name="btneq" value="=" onclick="data.value=eval(data.value)">
+					
+						<p class="text-right" style="margin: 55px 30px 0px 0px; color: #b2b2b2; font-size: 12px">
+						created by <a href="mepsrajput.github.io" style="text-decoration: none; color: red">Pradeep Singh</a>
+						</p>
+					
 				</form>
+								</div>
+
 				</div>
+				
+				</div>
+
 				</div>
 
 <!-- Javascript code -->  
