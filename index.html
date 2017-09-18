@@ -2,9 +2,14 @@
 
 <html>  
 <head> 
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+         
+		 		<link rel="shortcut icon" href="favicon2.ico" type="image/x-icon" />
+
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+				
+				<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+				
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 
 <title>Basic Calculator</title>  
@@ -43,7 +48,7 @@ input:active {
 }
 
 
-.blank {
+.inputbar {
 	width: 295px;
 	height:50px;
 }
@@ -52,15 +57,15 @@ input:active {
 	width: 350px;
 	background-color: black;
 	padding: 60px 0px 30px 0px;
-	margin-left: 492px;
+	margin: auto;
 	margin-top: 50px;
 }
 
 @media only screen and (max-width: 500px) {
     .design {
-	width: 330px;
-	margin: 15px 15px 0px 0px;
-		align:left;
+		width: 330px;
+		margin: auto;
+		align: center;
 	}
 }
  
@@ -81,7 +86,7 @@ input:active {
 				
 				<div class="design w3-container w3-round-large w3-card-4">
 				<form name="calci" class="text-center">  
-						<input type="text" style="padding-right: 8px; margin-bottom: 25px; background-color: #e5e5e5; font-size: 18px;" class="blank text-right" name="data"></br>
+						<input type="text" style="padding-right: 8px; margin-bottom: 25px; background-color: #e5e5e5; font-size: 18px;" class="inputbar text-right" name="data"></br>
 						<input type="button" class="btn btn-lg" name="btn1" value="1" onclick="displayNum(btn1.value)">
 						<input type="button" class="btn btn-lg" name="btn2" value="2" onclick="displayNum(btn2.value)">
 						<input type="button" class="btn btn-lg" name="btn3" value="3" onclick="displayNum(btn3.value)">
